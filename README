@@ -1,97 +1,120 @@
+Perfeito! Aqui está a versão **completa e profissional do README em inglês**, pronta para produção e GitHub. Mantive toda a estrutura, badges e instruções claras:
+
+---
+
+````markdown
 # SentinelZero
 
-**Post-Audit DeFi Listing Risk Intelligence Engine**
+**Post-Audit DeFi Risk Intelligence Engine**
 
-SentinelZero is a research-driven framework designed to assess
-**structural, governance, liquidity, and oracle-related risks**
-in DeFi protocols **after audits have been completed**, with
-explicit focus on **exchange listing and monitoring decisions**.
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)  
+[![Python Version](https://img.shields.io/badge/Python-3.11+-blue)](https://www.python.org/)
 
-Audits reduce bugs.  
-They do not eliminate risk.
+SentinelZero is a **data-driven framework** designed to identify **structural, behavioral, and governance risks in DeFi protocols after audits**.  
 
-SentinelZero focuses on what happens **after deployment**.
+> ⚠️ Audits reduce bugs but do not eliminate risks. SentinelZero focuses on what happens **post-deployment**.
 
 ---
 
-## Problem Statement
+## 🧩 Problem Solved
 
-Most DeFi security failures are not caused by unknown bugs,
-but by **systemic and structural weaknesses** that audits do not cover.
-
-Exchanges and institutional teams still rely on:
-- Manual risk analysis
-- Subjective judgment
-- Fragmented data sources
-
-This creates inconsistency, blind spots, and operational risk.
-
-SentinelZero standardizes post-audit risk intelligence.
+Despite billions lost in DeFi due to post-audit failures, there were no reliable tools for continuous monitoring.  
+SentinelZero provides intelligence based on governance, liquidity, and oracle data to mitigate risks.
 
 ---
 
-## Target Users
+## 🚀 Features
 
-- Crypto Exchanges (listing & monitoring teams)
-- DeFi Protocols (post-audit risk visibility)
-- Institutional Investors
-- Research & Compliance Teams
-
----
-
-## Core Risk Pillars
-
-SentinelZero evaluates listing viability across three primary pillars:
-
-1. **Liquidity Risk**
-2. **Governance Risk**
-3. **Oracle Dependency Risk**
-
-Each pillar produces **explicit, explainable findings**.
+- Validates protocol JSONs against strict schemas
+- Monitors governance, liquidity, and oracles
+- Automatically generates reports in **TXT**, **HTML**, **PDF**, and **Dashboard HTML**
+- Integrates multiple APIs (Coingecko, DefiLlama)
+- Pre-production and full simulation routines included
+- Built-in unit testing with **pytest**
 
 ---
 
-## How It Works
+## 💻 Installation
 
-1. Ingests public protocol data
-2. Detects structural risk signals
-3. Translates signals into risk findings
-4. Produces a transparent risk score and report
+Clone the repository:
 
----
+```bash
+git clone https://github.com/LCMF2022/SentinelZero.git
+cd SentinelZero
+````
 
-## Output Example
+Create and activate a Python virtual environment:
 
-SentinelZero Listing Risk Report
-Protocol: ExampleProtocol
+**Windows (PowerShell)**
 
-Liquidity Risk:
+```powershell
+python -m venv venv
+.\venv\Scripts\activate
+```
 
-Low TVL relative to listing standards
+**Linux / Mac**
 
-Sharp 7-day liquidity decline
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
-Governance Risk:
+Install dependencies:
 
-Upgradeable contracts controlled by small multisig
-
-Oracle Dependency Risk:
-
-Single oracle dependency with low-liquidity feed
-
-Overall Risk Score: 72 / 100
-
-
----
-
-## Disclaimer
-
-SentinelZero is a **risk intelligence and research tool**.
-It does not provide financial advice, security guarantees,
-or listing recommendations.
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## License
+## ⚙️ Usage
 
-Apache 2.0
+**Run full simulation (pre-production):**
+
+```powershell
+.\run_preprod.ps1
+```
+
+This will:
+
+* Copy tests to the root (if needed)
+* Activate the virtual environment
+* Install dependencies
+* Run the full simulation (`run_full_simulation.py`)
+* Generate reports in `logs/` and `reports/`
+
+**Run simulation directly:**
+
+```bash
+python run_full_simulation.py
+```
+
+**Run unit tests only:**
+
+```bash
+pytest tests/
+```
+
+---
+
+## 🗂 Project Structure
+
+```
+SentinelZero/
+├─ sentinelzero/        ← Python source code
+├─ tests/               ← Unit tests
+├─ logs/                ← TXT and HTML reports
+├─ reports/             ← PDFs and dashboards
+├─ run_full_simulation.py
+├─ run_preprod.ps1
+├─ requirements.txt
+├─ README.md
+└─ .gitignore
+```
+
+---
+
+## 📄 License
+
+Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
