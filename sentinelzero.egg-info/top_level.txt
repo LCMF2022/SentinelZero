@@ -1,0 +1,7 @@
+api
+docs
+examples
+reports
+sentinelzero
+tests
+venv
