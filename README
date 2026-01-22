@@ -1,0 +1,97 @@
+# SentinelZero
+
+**Post-Audit DeFi Listing Risk Intelligence Engine**
+
+SentinelZero is a research-driven framework designed to assess
+**structural, governance, liquidity, and oracle-related risks**
+in DeFi protocols **after audits have been completed**, with
+explicit focus on **exchange listing and monitoring decisions**.
+
+Audits reduce bugs.  
+They do not eliminate risk.
+
+SentinelZero focuses on what happens **after deployment**.
+
+---
+
+## Problem Statement
+
+Most DeFi security failures are not caused by unknown bugs,
+but by **systemic and structural weaknesses** that audits do not cover.
+
+Exchanges and institutional teams still rely on:
+- Manual risk analysis
+- Subjective judgment
+- Fragmented data sources
+
+This creates inconsistency, blind spots, and operational risk.
+
+SentinelZero standardizes post-audit risk intelligence.
+
+---
+
+## Target Users
+
+- Crypto Exchanges (listing & monitoring teams)
+- DeFi Protocols (post-audit risk visibility)
+- Institutional Investors
+- Research & Compliance Teams
+
+---
+
+## Core Risk Pillars
+
+SentinelZero evaluates listing viability across three primary pillars:
+
+1. **Liquidity Risk**
+2. **Governance Risk**
+3. **Oracle Dependency Risk**
+
+Each pillar produces **explicit, explainable findings**.
+
+---
+
+## How It Works
+
+1. Ingests public protocol data
+2. Detects structural risk signals
+3. Translates signals into risk findings
+4. Produces a transparent risk score and report
+
+---
+
+## Output Example
+
+SentinelZero Listing Risk Report
+Protocol: ExampleProtocol
+
+Liquidity Risk:
+
+Low TVL relative to listing standards
+
+Sharp 7-day liquidity decline
+
+Governance Risk:
+
+Upgradeable contracts controlled by small multisig
+
+Oracle Dependency Risk:
+
+Single oracle dependency with low-liquidity feed
+
+Overall Risk Score: 72 / 100
+
+
+---
+
+## Disclaimer
+
+SentinelZero is a **risk intelligence and research tool**.
+It does not provide financial advice, security guarantees,
+or listing recommendations.
+
+---
+
+## License
+
+Apache 2.0

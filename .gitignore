@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environment
+venv/
+
+# Backup e logs
+backup_*/
+logs/
+
+# Reports gerados automaticamente
+reports/
+
+# IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Outros
+*.tmp
