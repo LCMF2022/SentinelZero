@@ -1,0 +1,40 @@
+name: Deployment Pipeline
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Deployment environment
+        required: true
+        default: staging
+        type: choice
+        options:
+          - staging
+          - production
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deployment simulation
+        run: |
+          ENV="${{ github.event.inputs.environment || 'staging' }}"
+          echo "Deploying to $ENV"
+          echo "Commit: ${{ github.sha }}"
+
+          if [ "$ENV" = "production" ]; then
+            echo "🚀 Production deployment"
+          else
+            echo "🔧 Staging deployment"
+          fi
+
+          echo "Deployment finished successfully"
