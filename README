@@ -2,8 +2,10 @@
 
 **Post-Audit DeFi Risk Intelligence Engine**
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)  
-[![Python Version](https://img.shields.io/badge/Python-3.11+-blue)](https://www.python.org/)
+![CI](https://github.com/LCMF2022/SentinelZero/actions/workflows/ci.yml/badge.svg)
+![Security Scan](https://github.com/LCMF2022/SentinelZero/actions/workflows/data-update.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)
 
 SentinelZero is a **data-driven framework** designed to identify **structural, behavioral, and governance risks in DeFi protocols after audits**.  
 
