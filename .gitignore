@@ -1,11 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
 # Virtual environment
 venv/
 *.pyc
 __pycache__/
 
-# Logs, backups e relatórios
-logs/
-backup_*/
+# Logs / cache
+_logs/
+cache/
+_backup/
+
+# Node
+node_modules/
+
+# Env
+.venv/
+.env
 
 reports/*.pdf
 reports/dashboard_*.html
